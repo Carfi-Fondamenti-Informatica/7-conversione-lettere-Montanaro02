@@ -6,10 +6,10 @@ using namespace std;
 int main() {
     char a;
     cin >> a;
-    if (verifica(a)) {
+    if (lettere (a)) {
         cout << conversione (a);
     } else {
-        cout << "Errore";
+        cout << "errore";
     }
     return 0;
 }
