@@ -6,4 +6,4 @@
 
 bool lettere(char);
 
-char conversione (char);
+char conversione(char);
