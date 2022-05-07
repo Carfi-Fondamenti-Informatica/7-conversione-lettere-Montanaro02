@@ -1,18 +1,20 @@
 #include "lib.h"
-bool verifica(char l) {
-    if((l>=65 && l<=90) || (l>=90 && l<=122)){
+
+bool lettere(char a) {
+    if (((a>=65)&&(a<=90))||(a>=97)&&(a<=122)) {
         return true;
-    }else{
+    } else {
         return false;
     }
 }
-char conversione (char l) {
+
+char conversione (char a) {
     char operazione;
-    if ((l >= 64 && l < 91)) {
-        operazione = l + 32;
+    if ((a>=65)&&(a<=90)) {
+        operazione=a+32;
         return operazione;
-    } else if ((l > 96 && l < 123)) {
-        operazione = l - 32;
+    } else if ((a>=97)&&(a<=122)) {
+        operazione=a-32;
         return operazione;
     }
 }
