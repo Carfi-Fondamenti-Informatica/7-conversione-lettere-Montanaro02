@@ -1,20 +1,15 @@
 #include <iostream>
+#include "lib.h"
+
 using namespace std;
 
 int main() {
-    char l;
-    cin >> l;
-    if ((l > 64 && l < 91) || (l > 96 && l < 123)) {
-        cout << "vero\n";
-        if ((l >= 64 && l < 91)) {
-            l = l + 32;
-            cout << l;
-        } else if ((l > 96 && l < 123)) {
-            l = l - 32;
-            cout << l;
-        } else {
-            cout << "Errore";
-        }
-        return 0;
+    char a;
+    cin >> a;
+    if (verifica(a)) {
+        cout << conversione (a);
+    } else {
+        cout << "Errore";
     }
+    return 0;
 }
