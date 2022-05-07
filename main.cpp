@@ -9,7 +9,7 @@ int main() {
     if (lettere (a)) {
         cout << conversione (a);
     } else {
-        cout << "errore";
+        cout << "Errore";
     }
     return 0;
 }
